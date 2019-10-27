@@ -1,0 +1,30 @@
+facebook:
+  client:
+    clientId: 451698182369606
+    clientSecret: c94d25c620f6e0c0467cf61d50599a6b
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth?display=popup
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+    scope: email
+  resource:
+    userInfoUri: https://graph.facebook.com/me?fields=id,name,email,link
+
+google:
+  client:
+    clientId: 112123657465-qh8qqqea3aa2128h2aa28mu7b17kfl4l.apps.googleusercontent.com
+    clientSecret: NLYThpU5L92Ss7N5wgtmaL1a
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+    scope: email, profile
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v2/userinfo
+
+kakao:
+  client:
+    clientId: 33cb31f9ae3de8233b6e4aa1899707ec
+    accessTokenUri: https://kauth.kakao.com/oauth/token
+    userAuthorizationUri: https://kauth.kakao.com/oauth/authorize
+  resource:
+    userInfoUri: https://kapi.kakao.com/v1/user/me
